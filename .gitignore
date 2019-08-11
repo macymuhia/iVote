@@ -1,0 +1,7 @@
+*.pyc
+*.idea
+.idea/
+.vscode/
+start.sh
+virtual/
+__pycache__/
