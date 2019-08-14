@@ -31,17 +31,9 @@ def users():
     return render_template('user/user.html')
 
 
-# @main.route('/users', methods=['GET', 'POST'])
-# def users():
-#     '''
-#     Function the returns what the user plans to do during breaktime
-#     '''
-#     return render_template('user/user.html')
-
-
-# @main.route('/users', methods=['GET', 'POST'])
-# def users():
-#     '''
-#     Function the returns what the user plans to do during breaktime
-#     '''
-#     return render_template('user/user.html')
+@main.route('/governor', methods=['GET', 'POST'])
+def governor():
+    '''
+    Function the returns governor voting page
+    '''
+    return render_template('user/governor.html')
