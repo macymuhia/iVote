@@ -1,0 +1,19 @@
+{% extends 'base.html'%} {% import 'macros.html' as macro%} {% import 'bootstrap/wtf.html' as wtf %} {% block styles%} {{ super() }}
+<!--super() function tells Jinja not to override any code that is defined in the block-->
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"> {% endblock %} {% block content %}
+<br> <br> <br>
+<div class="container" style="background-color: Purple;">
+    <div class="col-md-6 ">
+        <img src="/static/photos/time.jpg " style=" height:370px;" style="padding-bottom:300px;">
+    </div>
+    <br> <br>
+    <div class="col-md-6 " style="background-color: rgb(228, 144, 95);">
+        <p style="font-size: 20px; float:-400px; "> <strong style="font-size: 60px;">D</strong>o not check your soul at the door when you cross the threshold of your workplace. Whether you are a custodian or a CEO, practice work as sacred art. Respect comes not from the work you do, but the way
+            you do your work. </p>
+        <br> <br>
+        <a class="btn btn-primary text-center text-danger " href="">Your workit hour
+        </a>
+        <hr>
+    </div>
+</div>
+{% endblock %}
