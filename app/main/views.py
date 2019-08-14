@@ -3,7 +3,7 @@ from flask_login import login_required,current_user
 from . import main
 from .. import db,photos
 from ..models import User,,Results
-from .forms import UpdateProfile,BlogsForm,CommentsForm
+from .forms import PresidentialForm,GovernorForm
 
 
 
@@ -19,7 +19,7 @@ def thanks():
     return render_template('thanks.html')
 
 
-@main.route('/nps_vote', methods=['POST'])
+@main.route('/ge_vote', methods=['POST'])
 def post_user():
     vote = Votes(request.form['hg'], request.form['hb'])
     db.session.add(vote)
@@ -27,7 +27,7 @@ def post_user():
     return redirect(url_for('thanks'))
 
 
-@main.route('/nps_results')
+@main.route('/ge_results')
 @login_required
 def results():
         ngigi=Votes.query.filter(Votes.hb == "ngigi").count()
@@ -35,7 +35,7 @@ def results():
         michelle=Votes.query.filter(Votes.hg == "michelle").count()
         mercy=Votes.query.filter(Votes.hg == "mercy").count()
 
-        print("Total Voters",(sneha + neha))
+        print("Total Voters",( ))
 
         results={"Ngigi":ngigi,"Sylviah":sylviah,"Michellle":michelle,"Mercy":mercy}
 
