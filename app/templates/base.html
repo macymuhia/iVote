@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="{{url_for('static', filename='photos/od.css')}}"> {% extends 'bootstrap/base.html'%}
+<!-- Navbar block  -->
+{% block navbar %} {% include 'navbar.html' %} {% endblock %} {%block styles %} {{super()}}
+
+<meta http-equiv="Cache-control" content="no-cache"> {{super()}}
+
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gentium+Basic" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{url_for('static', filename='static/index.css')}}"> {% endblock %}
