@@ -10,7 +10,7 @@ from app import db
 def register():
     form = RegistrationForm()
     if form.validate_on_submit():
-        user = User(email = form.email.data, username = form.username.data,password = form.password.data)
+        user = User(id_number = form.id_number.data,password = form.password.data)
         db.session.add(user)
         db.session.commit()
 
@@ -24,7 +24,7 @@ def register():
 def login():
     login_form = LoginForm()
     if login_form.validate_on_submit():
-        user = User.query.filter_by(email = login_form.email.data).first()
+        user = User.query.filter_by(id_number = login_form.id_number.data).first()
         if user is not None and user.verify_password(login_form.password.data):
             login_user(user,login_form.remember.data)
             session.permanent = True
@@ -32,7 +32,7 @@ def login():
 
         flash('Invalid username or Password')
 
-    title = "Pitch login"
+    title = "login"
     return render_template('auth/login.html',login_form = login_form,title=title)
 @auth.route('/logout')
 @login_required
