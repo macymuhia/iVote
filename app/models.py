@@ -42,5 +42,7 @@ class User(UserMixin,db.Model):
 class Vote(db.Model):
     __tablename__="vote"
     id=db.Column(db.Integer,primary_key=True)
-    name=db.Column(db.String(255))
+    presidentname=db.Column(db.String(255))
+    womanname=db.Column(db.String(255))
+    conname=db.Column(db.String(255))
       
