@@ -13,3 +13,19 @@ def index():
   '''
 
   return render_template('index.html')
+
+
+@main.route('/president', methods=['GET', 'POST'])
+def president():
+    '''
+    Function the returns what the user plans to do during breaktime
+    '''
+    return render_template('president.html')
+
+
+@main.route('/users', methods=['GET', 'POST'])
+def users():
+    '''
+    Function the returns what the user plans to do during breaktime
+    '''
+    return render_template('user/user.html')
