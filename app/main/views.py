@@ -18,14 +18,30 @@ def index():
 @main.route('/president', methods=['GET', 'POST'])
 def president():
     '''
-    Function the returns what the user plans to do during breaktime
+    Function the returns presidential  voting page
     '''
-    return render_template('president.html')
+    return render_template('users.html')
 
 
 @main.route('/users', methods=['GET', 'POST'])
 def users():
     '''
-    Function the returns what the user plans to do during breaktime
+    Function the returns user page and its data
     '''
     return render_template('user/user.html')
+
+
+# @main.route('/users', methods=['GET', 'POST'])
+# def users():
+#     '''
+#     Function the returns what the user plans to do during breaktime
+#     '''
+#     return render_template('user/user.html')
+
+
+# @main.route('/users', methods=['GET', 'POST'])
+# def users():
+#     '''
+#     Function the returns what the user plans to do during breaktime
+#     '''
+#     return render_template('user/user.html')
