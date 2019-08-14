@@ -18,8 +18,6 @@ class User(UserMixin,db.Model):
     id = db.Column(db.Integer,primary_key = True)
     id_number =db.Column(db.Integer())
     password = db.Column(db.String(255),index = True)
-    email = db.Column(db.String(255),unique = True,index = True)
-    profile_pic_path = db.Column(db.String())
     password_secure = db.Column(db.String(255))
     
    

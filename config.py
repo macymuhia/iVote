@@ -3,7 +3,7 @@ import os
 class Config:
 
    
-    SECRET_KEY = ('kamikaze')
+    SECRET_KEY = 'kamikaze'
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://michelle:kami@localhost/kami'
     UPLOADED_PHOTOS_DEST ='app/static/photos'
     MAIL_SERVER = 'smtp.googlemail.com'
