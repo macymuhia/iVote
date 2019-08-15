@@ -1,0 +1,51 @@
+{% extends 'base.html'%} {% block styles%} {{ super() }}
+<!--super() function tells Jinja not to override any code that is defined in the block-->
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"> {% endblock %} {% block content %}
+
+<div class="container-fluid">
+    <div class=" row " style="background-color:black; color:white; ">
+
+        <div class="col-md-4 ">
+            <div class=" card ">
+                <img src="/static/photos/governor4.jpg " alt="Uhuru " style="width:94%; ">
+                <h1> Anne Waiguru</h1>
+                <p class="title "> She is the 2nd and current Governor of Kirinyaga County in Kenya, in office since 22 August 2017. She was elected as Governor in elections held on 8 August 2017.</p>
+
+                <a href="# "><i class="fa fa-dribbble "></i></a>
+                <a href="# "><i class="fa fa-twitter "></i></a>
+                <a href="# "><i class="fa fa-linkedin "></i></a>
+                <a href="# "><i class="fa fa-facebook "></i></a>
+                <p style="color:black; "><button>Vote</button></p>
+            </div>
+        </div>
+        <div class="col-md-4 ">
+            <div class="card ">
+                <img src="/static/photos/governor.jpg " alt="Raila " style="width:94%; ">
+                <h1>Evans Kidero</h1>
+                <p class="title ">Politician and former Governor of Nairobi County. He served as CEO of Mumias Sugar Company for 8 years, resigning in 2012 to join elective politics.</p>
+                <a href="# "><i class="fa fa-dribbble "></i></a>
+                <a href="# "><i class="fa fa-twitter "></i></a>
+                <a href="# "><i class="fa fa-linkedin "></i></a>
+                <a href="# "><i class="fa fa-facebook "></i></a>
+                <p style="color:black; "><button>Vote</button></p>
+            </div>
+        </div>
+        <div class="col-md-4 ">
+            <div class="card ">
+                <img src="/static/photos/governor2.jpeg " alt="John " style="width:94%; ">
+                <h1>Mike Sonko </h1>
+                <p class="title "> Politician who currently serves as the second Governor of Nairobi since devolution.</p>
+                <a href="# "><i class="fa fa-dribbble "></i></a>
+                <a href="# "><i class="fa fa-twitter "></i></a>
+                <a href="# "><i class="fa fa-linkedin "></i></a>
+                <a href="# "><i class="fa fa-facebook "></i></a>
+                <p style="color:black; "><button>Vote</button></p>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends 'base.html'%} {% import 'bootstrap/wtf.html' as wtf %} {% block styles%} {{ super() }}
+<!--super() function tells Jinja not to override any code that is defined in the block-->
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"> {% endblock %} {% block content %}
+<br>
+<div class="container-fluid" style="background-color :black;">
+
+    <div class="container" style="background-color :black;">
+        <br>
+        <div class=" row ">
+            <br>
+            <div class="col-md-6 ">
+                <img src="/static/photos/register.jpg " style="margin-right: 100%; height:380px; ">
+            </div>
+            <br>
+            <div class="col-md-6 ">
+                <p style="font-size: 20px; float:-400px; color:white; "> <strong style="font-size: 60px; ">E</strong>lections have been the usual mechanism by which modern representative democracy has operated since the 17th century.Elections may fill offices in the legislature, sometimes in the executive and
+                    judiciary, and for regional and local government. This process is also used in many other private and business organizations, from clubs to voluntary associations and corporations.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br> <br>
+        <div class="row ">
+            <div class="col-md-4 ">
+                <div class="well well-lg ">
+                    <img src="/static/photos/vote4.jpg " alt=" " height=450px;>
+                    <h3>Presidential</h3>
+                    <p>Vote for a presidential candidate.</p>
+                    <a href="/president " class="btn btn-primary -center ">Vote</a>
+                </div>
+            </div>
+
+            <br> <br> <br> <br> <br>
+
+            <div class="col-md-4 ">
+                <div class="well well-lg ">
+                    <img src="/static/photos/vote5.jpg " alt=" " height=450px;>
+                    <h3>Governor</h3>
+                    <p>Vote for governor here.</p>
+                    <a href="/governor " class="btn btn-primary -center ">Vote</a>
+                </div>
+            </div>
+            <br> <br> <br> <br>
+
+            <div class="col-md-4 ">
+                <div class="well well-lg ">
+                    <img src="/static/photos/vote6.jpg " alt=" " height=250px;>
+                    <h3>Confirmation</h3>
+                    <p>Confirm your vote</p>
+                    <a href="/confirmation " class="btn btn-primary -center ">Confirmation</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
