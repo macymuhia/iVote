@@ -46,19 +46,3 @@ def confirmation():
     '''
     return render_template('user/confirmation.html')
 
-
-@main.route('/login', methods=['GET', 'POST'])
-def login():
-    '''
-    Function the returns the login page
-    '''
-    return render_template('user/auth/login.html')
-
-
-# @main.route('/admin', methods=['GET', 'POST'])
-# def admin():
-#     '''
-#     Function the returns the login page
-#     '''
-#     return render_template('user/admin.html')
-
