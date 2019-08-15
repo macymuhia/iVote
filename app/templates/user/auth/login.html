@@ -10,10 +10,12 @@
 <br>
 <br>
 <br>
-<div class="col-md-2" style="background-color :red; "></div>
+<div class="col-md-2"></div>
 <div class="col-md-8">
-    
-    <p> Don't have an account?</p>
+    {{wtf.quick_form(login_form)}}
+    <br>
+    <br>
+    <p> Don't have an account? <a href="{{url_for('auth.register')}}">Sign up Here</a></p>
 </div>
 <div class="col-md-2"></div>
 
