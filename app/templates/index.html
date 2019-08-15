@@ -1,28 +1,46 @@
 {% extends 'base.html'%} {% import 'bootstrap/wtf.html' as wtf %} {% block styles%} {{ super() }}
 <!--super() function tells Jinja not to override any code that is defined in the block-->
 <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"> {% endblock %} {% block content %}
+<div class="container">
+    <div class=" row ">
+        <br>
+        <div class="col-md-6 ">
+            <img src="/static/photos/flag.jpg " style="margin-right: 100%; height:380px; ">
+        </div>
+        <br>
+        <div class="col-md-6 ">
+            <p style="font-size: 20px; float:-400px; color:white;"> <strong style="font-size: 60px;">C</strong>ompulsory voting, or mandatory voting, is a system in which electors are required to vote in elections or at least attend a polling place on Election Day. If a voter does not appear at a polling place,
+                and is eligible to vote, he or she may have to contribute community service or fines. This voting system exists in about a quarter of all democracies in the world. </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row ">
+        <div class="col-md-4 ">
+            <div class="well well-lg ">
+                <img src="/static/photos/vote9.jpg " alt=" " height=400px;>
+            </div>
+        </div>
 
-<div class=" row ">
-    <br>
-    <div class="col-md-6 ">
-        <img src="/static/photos/vote3.jpg " style="margin-right: 100%; height:420px; ">
-    </div>
-    <br>
-    <div class="col-md-6 ">
-        <p style="font-size: 20px; float:-400px; "> <strong style="font-size: 60px;">C</strong>ompulsory voting, or mandatory voting, is a system in which electors are required to vote in elections or at least attend a polling place on Election Day. If a voter does not appear at a polling place,
-            and is eligible to vote, he or she may have to contribute community service or fines. This voting system exists in about a quarter of all democracies in the world. </p>
-    </div>
-</div>
-<div class="row ">
-    <div class="col-md-6 ">
-        <img src="/static/photos/vote1.jpg " style=" height:500px; ">
-    </div>
-    <br>
-    <br>
 
-     <div class="col-md-6 ">
-        <p style="font-size: 20px; float:-400px; "> <strong style="font-size: 60px;">C</strong>ompulsory voting, or mandatory voting, is a system in which electors are required to vote in elections or at least attend a polling place on Election Day. If a voter does not appear at a polling place,
-            and is eligible to vote, he or she may have to contribute community service or fines. This voting system exists in about a quarter of all democracies in the world. </p>
+
+        <div class="col-md-4 ">
+            <div class="well well-lg ">
+                <img src="/static/photos/vote7.jpg " alt=" " height=400px;>
+            </div>
+        </div>
+
+
+        <div class="col-md-4 ">
+            <div class="well well-lg ">
+                <img src="/static/photos/vote8.jpg " alt=" " height=400px;>
+            </div>
+        </div>
+
+
+
+
+
     </div>
 
 </div>

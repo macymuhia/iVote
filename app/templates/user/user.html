@@ -1,34 +1,32 @@
-{% extends 'base.html'%}
-  {% import 'bootstrap/wtf.html' as wtf %} 
-  {% block styles%} 
-  {{ super() }}
+{% extends 'base.html'%} {% import 'bootstrap/wtf.html' as wtf %} {% block styles%} {{ super() }}
 <!--super() function tells Jinja not to override any code that is defined in the block-->
-<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"> 
-{% endblock %} 
-{% block content %}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"> {% endblock %} {% block content %}
 <br>
-<div class="container-fluid" style="background-color : rgb(69, 85, 221);">
-    <div class="container" style="background-color : rgb(228, 144, 95);" style="padding-right:300px;">
-        <br> <br> <br>
+<div class="container-fluid" style="background-color :black;">
+
+    <div class="container" style="background-color :black;">
+        <br>
         <div class=" row ">
             <br>
             <div class="col-md-6 ">
-                <img src="/static/photos/room1.jpg " style="margin-right: 100%; height:380px; ">
+                <img src="/static/photos/register.jpg " style="margin-right: 100%; height:380px; ">
             </div>
             <br>
             <div class="col-md-6 ">
-                <p  style="font-size: 20px; float:-400px; "> <strong style="font-size: 60px;">T</strong>he mind can only take so much before it becomes overloaded by too much data or activity, which can ultimately lead to stress. Regularly skipping a lunch break can cause stress and fatigue to sneak up on the employee, resulting in a sudden loss of zeal for his job duties. Stressing about an issue at work can cause the employee to display negative behavior, such as irritability and hopelessness. Once stress begins to build, the employee should take a quick break away from the issue and revisit it once his mental state is intact again. </p>
+                <p style="font-size: 20px; float:-400px; color:white; "> <strong style="font-size: 60px; ">E</strong>lections have been the usual mechanism by which modern representative democracy has operated since the 17th century.Elections may fill offices in the legislature, sometimes in the executive and
+                    judiciary, and for regional and local government. This process is also used in many other private and business organizations, from clubs to voluntary associations and corporations.</p>
             </div>
         </div>
-
+        <br>
+        <br>
         <br> <br>
         <div class="row ">
             <div class="col-md-4 ">
                 <div class="well well-lg ">
-                    <img src="/static/photos/tired2.jpg " alt=" " height=300px;>
+                    <img src="/static/photos/vote4.jpg " alt=" " height=450px;>
                     <h3>Presidential</h3>
                     <p>Vote for a presidential candidate.</p>
-                    <a href="/president" class="btn btn-primary -center ">Vote</a>
+                    <a href="/president " class="btn btn-primary -center ">Vote</a>
                 </div>
             </div>
 
@@ -36,20 +34,20 @@
 
             <div class="col-md-4 ">
                 <div class="well well-lg ">
-                    <img src="/static/photos/tired1.jpg " alt=" " height=230px;>
+                    <img src="/static/photos/vote5.jpg " alt=" " height=450px;>
                     <h3>Governor</h3>
                     <p>Vote for governor here.</p>
-                    <a href="/governor" class="btn btn-primary -center ">Vote</a>
+                    <a href="/governor " class="btn btn-primary -center ">Vote</a>
                 </div>
             </div>
             <br> <br> <br> <br>
 
             <div class="col-md-4 ">
                 <div class="well well-lg ">
-                    <img src="/static/photos/work1.jpg " alt=" " height=200px;>
+                    <img src="/static/photos/vote6.jpg " alt=" " height=250px;>
                     <h3>Confirmation</h3>
                     <p>Confirm your vote</p>
-                    <a href="/confirmation" class="btn btn-primary -center ">Confirmation</a>
+                    <a href="/confirmation " class="btn btn-primary -center ">Confirmation</a>
                 </div>
             </div>
         </div>

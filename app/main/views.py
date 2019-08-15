@@ -37,3 +37,28 @@ def governor():
     Function the returns governor voting page
     '''
     return render_template('user/governor.html')
+
+
+@main.route('/confirmation', methods=['GET', 'POST'])
+def confirmation():
+    '''
+    Function the returns governor voting page
+    '''
+    return render_template('user/confirmation.html')
+
+
+@main.route('/login', methods=['GET', 'POST'])
+def login():
+    '''
+    Function the returns the login page
+    '''
+    return render_template('user/auth/login.html')
+
+
+# @main.route('/admin', methods=['GET', 'POST'])
+# def admin():
+#     '''
+#     Function the returns the login page
+#     '''
+#     return render_template('user/admin.html')
+
