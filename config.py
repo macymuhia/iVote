@@ -1,6 +1,6 @@
 import os
 class Config:
-    SECRET_KEY = 'top-secret'
+    SECRET_KEY = 'topsecret'
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://michelle:kami@localhost/sin'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
