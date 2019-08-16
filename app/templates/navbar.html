@@ -6,13 +6,15 @@
 <div class="navbar navbar-inverse" role="navigation">
     <div class="container">
         <div class="navbar-header">
+
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{ url_for('main.index') }}">Two Factor Auth</a>
+            <img src=" https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Coat_of_arms_of_Kenya_%28Official%29.svg/1200px-Coat_of_arms_of_Kenya_%28Official%29.svg.png" alt="tororo" height="50px" width="50px"id="tororo">
+            <a class="navbar-brand" href="{{ url_for('main.index') }}">IVote</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -21,6 +23,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 {% if current_user.is_authenticated %}
+                <li><a href="{{ url_for('main.user') }}">Users</a></li>
                 <li><a href="{{ url_for('main.logout') }}">Log Out</a></li>
                 {% else %}
                 <li><a href="{{ url_for('main.login') }}">Log In</a></li>
@@ -29,6 +32,11 @@
         </div>
     </div>
 </div>
+<style>
+li{
+    color:white;
+}
+</style>
 {% endblock %}
 
 

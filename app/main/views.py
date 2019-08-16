@@ -39,6 +39,12 @@ def thanks():
 @main.route('/vote')
 def vote():
     return render_template('vote.html')
+@main.route('/gover')
+def gover():
+    return render_template('gover.html')
+@main.route('/user')
+def user():
+    return render_template('users.html')
 
 
 

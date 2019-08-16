@@ -1,13 +1,14 @@
-{% extends 'base.html'%} {% import 'bootstrap/wtf.html' as wtf %} {% block styles%} {{ super() }}
+{% extends 'base.html'%} 
+{% import 'bootstrap/wtf.html' as wtf %} 
 <!--super() function tells Jinja not to override any code that is defined in the block-->
 
-<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"> {% endblock %}
+
  {% block content %}
  {% if current_user.is_authenticated %}
- <h1>Welcome, {{ current_user.username }}!</h1>
+ <h1 style=color:white;>Welcome, {{ current_user.username }}!</h1>
  {% else %}
- <h1>Welcome, Stranger!</h1>
- <p>Please <a href="{{ url_for('main.register') }}">Register</a> or <a href="{{ url_for('main.login') }}">Login</a>.</p>
+ <h1 style=color:white;>Welcome, Voter!</h1>
+ <p style=color:white;>Please <a href="{{ url_for('main.register') }}">Register</a> or <a href="{{ url_for('main.login') }}">Login</a>.</p>
  {% endif %}
 <div class="container">
     <div class=" row ">
@@ -17,7 +18,7 @@
         </div>
         <br>
         <div class="col-md-6 ">
-            <p style="font-size: 20px; float:-400px;"> <strong style="font-size: 60px;">C</strong>ompulsory voting, or mandatory voting, is a system in which electors are required to vote in elections or at least attend a polling place on Election Day. If a voter does not appear at a polling place,
+            <p style="font-size: 20px; float:-400px; color:white;"> <strong style="font-size: 60px;">C</strong>ompulsory voting, or mandatory voting, is a system in which electors are required to vote in elections or at least attend a polling place on Election Day. If a voter does not appear at a polling place,
                 and is eligible to vote, he or she may have to contribute community service or fines. This voting system exists in about a quarter of all democracies in the world. </p>
         </div>
     </div>
@@ -55,4 +56,9 @@
 </div>
 
 </div>
+<style>
+    body {
+        background-color: black;
+    }
+</style>
 {% endblock %}

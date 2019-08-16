@@ -1,51 +1,64 @@
-{% extends 'base.html'%} {% block styles%} {{ super() }}
+{% extends 'base.html'%} {% import 'bootstrap/wtf.html' as wtf %} {% block styles%} {{ super() }}
 <!--super() function tells Jinja not to override any code that is defined in the block-->
 <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"> {% endblock %} {% block content %}
+<br>
+<div class="container-fluid" style="background-color :black;">
 
-<div class="container-fluid">
-    <div class="row" style="background-color:black; color:white;">
-
-        <div class="col-md-4">
-            <div class=" card ">
-                <img src="/static/photos/uhuru.jpg " alt="Uhuru " style="width:94%;">
-                <h1>Uhuru Kenyatta</h1>
-                <p class="title ">Politician, businessman, and the fourth and current President of the Republic of Kenya</p>
-
-                <a href="# "><i class="fa fa-dribbble "></i></a>
-                <a href="# "><i class="fa fa-twitter "></i></a>
-                <a href="# "><i class="fa fa-linkedin "></i></a>
-                <a href="# "><i class="fa fa-facebook "></i></a>
-                <p style="color:black;"><button>Vote</button></p>
+    <div class="container" style="background-color :black;">
+        <br>
+        <div class=" row ">
+            <br>
+            <div class="col-md-6 ">
+                <img src="/static/photos/register.jpg " style="margin-right: 100%; height:380px; ">
+            </div>
+            <br>
+            <div class="col-md-6 ">
+                <p style="font-size: 20px; float:-400px; color:white; "> <strong style="font-size: 60px; ">E</strong>lections have been the usual mechanism by which modern representative democracy has operated since the 17th century.Elections may fill offices in the legislature, sometimes in the executive and
+                    judiciary, and for regional and local government. This process is also used in many other private and business organizations, from clubs to voluntary associations and corporations.</p>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card ">
-                <img src="/static/photos/raila.jpg " alt="Raila " style="width:84%;">
-                <h1>Raila Odinga</h1>
-                <p class="title ">Politician who served as the Prime Minister of Kenya from 2008 to 2013 and Leader of the Opposition since 2013.</p>
-                <a href="# "><i class="fa fa-dribbble "></i></a>
-                <a href="# "><i class="fa fa-twitter "></i></a>
-                <a href="# "><i class="fa fa-linkedin "></i></a>
-                <a href="# "><i class="fa fa-facebook "></i></a>
-                <p style="color:black;"><button>Vote</button></p>
+        <br>
+        <br>
+        <br> <br>
+        <div class="row ">
+            <div class="col-md-4 ">
+                <div class="well well-lg ">
+                    <img src="/static/photos/vote4.jpg " alt=" " height=450px;>
+                    <h3>Presidential</h3>
+                    <p>Vote for a presidential candidate.</p>
+                    
+                </div>
+            </div>
+
+            <br> <br> <br> <br> <br>
+
+            <div class="col-md-4 ">
+                <div class="well well-lg ">
+                    <img src="/static/photos/vote5.jpg " alt=" " height=450px;>
+                    <h3>Governor</h3>
+                    <p>Vote for governor here.</p>
+                   
+                </div>
+            </div>
+            <br> <br> <br> <br>
+
+            <div class="col-md-4 ">
+                <div class="well well-lg ">
+                    <img src="/static/photos/vote6.jpg " alt=" " height=250px;>
+                    <h3>Confirmation</h3>
+                    <p>Confirm your vote</p>
+                   
+                </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card ">
-                <img src="/static/photos/dida.jpg " alt="John " style="width:94%;">
-                <h1>Mohammed Abduba Dida</h1>
-                <p class="title ">Teacher who vied for the country's presidency in the 2013 General Election on an Alliance of Real Change party ticket.</p>
-                <a href="# "><i class="fa fa-dribbble "></i></a>
-                <a href="# "><i class="fa fa-twitter "></i></a>
-                <a href="# "><i class="fa fa-linkedin "></i></a>
-                <a href="# "><i class="fa fa-facebook "></i></a>
-                <p style="color:black;"><button>Vote</button></p>
-            </div>
-        </div>
-
-
-
 
     </div>
 </div>
+<style>
+   body {
+        background-color: black;
+       
+    }
+      
+</style>
 {% endblock %}

@@ -1,3 +1,6 @@
+{% extends 'base.html'%}
+{% import 'bootstrap/wtf.html' as wtf%}
+{% block content %}
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -19,14 +22,32 @@
       
       <div class="jumbotron">
         <br>
-         <h2> <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>   Thanks for voting!</h2>
+        <img src=" https://i.pinimg.com/originals/6e/02/d9/6e02d92923785108b148562a2fe7b050.gif" alt="tororo" height="100px" width="100px"id="tororo">
+         <h2 style=color:white;> <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>   Thanks for voting!</h2>
         <form action='/'>
-            <button type="submit" class="btn btn-lg btn-success" a href='main.logout'>Next Voter</button>
+          <a style=color:white; href="{{url_for('main.logout')}}" class="btn btn-primary -center">Next voter</a>
         </form>
       </div>
     
     </div>
-
- 
+  
+    <div class="container"> 
+        <div class="row">
+          <div class= "col-md-5"> </div>
+          <div class="col-md-3">
+    <img src=" https://i.pinimg.com/originals/6e/02/d9/6e02d92923785108b148562a2fe7b050.gif" alt="tororo" height="600px" width="600px"id="tororo">
+    </div>
+    </div>
+    <div clas="col-md-4"> </div>
+    </div>
+    
   </body>
 </html>
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+      
+</style>
+{% endblock%}
